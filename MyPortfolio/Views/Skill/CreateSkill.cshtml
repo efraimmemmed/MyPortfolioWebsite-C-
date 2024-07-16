@@ -1,0 +1,41 @@
+﻿@model Skill
+@{
+    ViewData["Title"] = "CreateSkill";
+    Layout = "~/Views/Layout/Index.cshtml";
+}
+
+<div class="content">
+	<div class="container-fluid">
+		<h4 class="page-title">Tables</h4>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card">
+					<div class="card-header">
+						<div class="card-title">Əlavə et</div>
+					</div>
+					<div class="card-body">
+						<div class="card-sub">
+							This is the basic table view of the ready dashboard :
+						</div>
+						<form method="post">
+							<label>Basliq</label>
+							<input type="text" asp-for="Title" class="form-control" />
+							<br />
+
+							<label>Dəyər(%-lə)</label>
+							<input type="text" asp-for="Value" class="form-control" />
+							<br />
+
+							<button class="btn btn-primary">Əlavə et</button>
+						</form>
+
+					</div>
+				</div>
+
+
+			</div>
+
+		</div>
+	</div>
+</div>
+

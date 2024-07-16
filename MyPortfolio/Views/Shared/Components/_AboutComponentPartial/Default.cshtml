@@ -1,0 +1,37 @@
+﻿
+<section id="about" class="s-about target-section">
+
+    <div class="row narrow section-intro has-bottom-sep">
+        <div class="col-full text-center">
+            <h3>About</h3>
+            <h1>@ViewBag.aboutTitle</h1>
+            <p class="lead">@ViewBag.aboutSubDescription</p>
+        </div>
+    </div>
+
+    <div class="row about-content">
+
+        <div class="col-six tab-full left">
+           <p>@ViewBag.aboutDetail</p>
+        </div>
+
+          @await Component.InvokeAsync("_SkillComponentPartial")
+
+        
+
+    </div> <!-- end about-content -->
+
+    <div class="row about-content about-content--buttons">
+
+        <div class="col-six tab-full left">
+            <a href="https://dosya.imgyukle.com/1UO08JjG" class="btn btn--primary full-width">CV'mi Yüklə</a>
+        </div>
+        <div class="col-six tab-full right">
+            <a href="https://dosya.imgyukle.com/1UO08JjG" class="btn full-width">Məni tanı</a>
+        </div>
+
+    </div> <!-- end about-content buttons -->
+    @await Component.InvokeAsync("_ExperienceComponentPartial")
+    <!-- end about-content timeline -->
+
+</section>
